@@ -4,11 +4,42 @@
 
 .navbar{
     background-color: #000000 !important;
+    padding: 0;
+}
+
+.navbar-brand{
+    padding: 0;
+    margin: 0;
+    border-bottom: 1px solid;
+}
+
+.nav-item>a:hover{
+    color:#fff;
+}
+
+ul>.nav-item>a{
+    color:#fff;
+}
+
+.nav-item.active:hover>a{
+    color:#fff;
+}
+
+.nav-item.active:hover ~ li>a{
+    color:#ccc;
+}
+
+.nav-link {
+    padding: 0.8rem 1rem !important;
 }
 
 ul>li{
-    font-weight: bold;
     text-transform: uppercase;
-    font-size:16px;
-    color: white !important;
+    font-size:14px;
+    margin: 0 18px;
+}
+
+ul>li.active{
+    border-bottom: 2px solid;
+    border-bottom-color: red;
 }
