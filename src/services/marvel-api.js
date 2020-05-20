@@ -1,7 +1,6 @@
 import React from 'react';
-import './bootstrap.min.css';
 
-class MarvelApi {
+export default class MarvelApi {
 
     _url_heroes = 'https://gateway.marvel.com/v1/public/characters';
 
