@@ -7,9 +7,7 @@ export default class CharacterList extends Component {
     marvelApi = new MarvelApi();
 
     state = {
-        cardItemImage: null,
-        cardItemName: null,
-        cardItemText: null
+        char: {}
     };
 
     constructor(){
@@ -17,24 +15,25 @@ export default class CharacterList extends Component {
         this.updateState();
     }
 
+    onLoadCharacters = (char) => {
+         this.setState({char});
+    };
+
     updateState() {
         this.marvelApi
-            .getHeroesById(1011334)
-            .then((hero) => {
-                this.setState({
-                    cardItemImageLink: hero.thumbnail.path + "." +hero.thumbnail.extension,
-                    cardItemName: hero.name,
-                    cardItemText: hero.description
-                });
-            });
+            .getCharacterById(1011334)
+            .then(this.onLoadCharacters);
     }
 
     render() {
         const
             {
-                cardItemImageLink,
-                cardItemName,
-                cardItemText
+                char: {
+                    cardItemImageLink,
+                    cardItemName,
+                    cardItemText
+                }
+
             }
                 = this.state;
 

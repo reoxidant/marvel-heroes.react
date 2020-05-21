@@ -14,70 +14,85 @@ export default class MarvelApi {
         return await response.json();
     }
     //heroes
-    async getAllHeroes(){
+    async getAllCharacters(){
         const {data} = await this.getResource(this._url_heroes + this._api_options);
-        return data.results;
+        return data.results.map(this._transformMarvelCharacter);
     }
 
-    async getAllHeroesOnThePageList(){
-        const {data} = await this.getResource(this._url_heroes + this._api_options + "&orderBy=name&limit=18&offset=0");
-        return data.results;
-    }
-
-    async getHeroesById(id){
+    async getCharacterById(id){
         const {data} = await this.getResource(this._url_heroes + `/${id}` + this._api_options);
-        return data.results[0];
+        return this._transformMarvelCharacter(data.results[0]);
     }
     //comics
     async getAllComics(){
         const {data} = await this.getResource(this._url_heroes + this._api_options);
-        return data.results;
+        return data.results.map(this._transformMarvelComics);
     }
 
     async getComicsById(id){
         const {data} = await this.getResource(this._url_heroes + `/${id}` + this._api_options);
-        return data.results[0];
+        return this._transformMarvelComics(data.results[0]);
     }
     //stories
     async getAllStories(){
         const {data} = await this.getResource(this._url_heroes + this._api_options);
-        return data.results;
+        return data.results.map(this._transformMarvelStories());
     }
 
     async getStoriesById(id){
         const {data} = await this.getResource(this._url_heroes + `/${id}` + this._api_options);
-        return data.results[0];
+        return this._transformMarvelStories(data.results[0]);
     }
     //series
     async getAllSeries(){
         const {data} = await this.getResource(this._url_heroes + this._api_options);
-        return data.results;
+        return data.results.map(this._transformMarvelSeries());
     }
 
     async getSeriesById(id){
         const {data} = await this.getResource(this._url_heroes + `/${id}` + this._api_options);
-        return data.results[0];
+        return this._transformMarvelSeries(data.results[0]);
     }
     //events
     async getAllEvents(){
         const {data} = await this.getResource(this._url_heroes + this._api_options);
-        return data.results;
+        return data.results.map(this._transformMarvelEvents());
     }
 
     async getEventsById(id){
         const {data} = await this.getResource(this._url_heroes + `/${id}` + this._api_options);
-        return data.results[0];
+        return this._transformMarvelEvents(data.results[0]);
+    }
+
+    _transformMarvelCharacter(char){
+        return {
+            cardItemImageLink: char.thumbnail.path + "." +char.thumbnail.extension,
+            cardItemName: char.name,
+            cardItemText: char.description
+        }
+    }
+
+    _transformMarvelComics(comic){
+        return {
+            data: comic.data
+        }
+    }
+
+    _transformMarvelStories(story){
+        return {
+            data: story.data
+        }
+    }
+
+    _transformMarvelSeries(series){
+        return {
+            data: series.data
+        }
+    }
+
+    _transformMarvelEvents(event){
+        return {
+            data: event.data
+        }
     }
 }
-
-const marvel = new MarvelApi();
-
-marvel.getAllHeroes().then((heroes) => {
-    heroes.map((hero) => {
-       // console.log(hero);
-    });
-});
-
-marvel.getHeroesById(1011334).then((hero) => {
-    // console.log(hero.thumbnail.extension);
-});
