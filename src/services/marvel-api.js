@@ -5,7 +5,6 @@ export default class MarvelApi {
     _api_options = `?&apikey=${process.env.REACT_APP_PUBLIC_API_KEY}`;
 
     async getResource(url) {
-
         const response = await fetch(url);
 
         if(!response.ok){
@@ -17,6 +16,11 @@ export default class MarvelApi {
     //heroes
     async getAllHeroes(){
         const {data} = await this.getResource(this._url_heroes + this._api_options);
+        return data.results;
+    }
+
+    async getAllHeroesOnThePageList(){
+        const {data} = await this.getResource(this._url_heroes + this._api_options + "&orderBy=name&limit=18&offset=0");
         return data.results;
     }
 
@@ -75,5 +79,5 @@ marvel.getAllHeroes().then((heroes) => {
 });
 
 marvel.getHeroesById(1011334).then((hero) => {
-    // console.log(hero);
+    // console.log(hero.thumbnail.extension);
 });

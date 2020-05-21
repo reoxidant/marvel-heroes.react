@@ -2,26 +2,41 @@ import React, {Component} from 'react';
 import MarvelApi from "../../services/marvel-api";
 import './characters-list.css';
 
-export default class CharacterList extends Component{
+export default class CharacterList extends Component {
 
     marvelApi = new MarvelApi();
 
     state = {
+        cardItemImage: null,
         cardItemName: null,
-        cardItemText:null
+        cardItemText: null
     };
 
-    updateState(){
-
+    constructor(){
+        super();
+        this.updateState();
     }
 
-    render(){
+    updateState() {
+        this.marvelApi
+            .getHeroesById(1011334)
+            .then((hero) => {
+                this.setState({
+                    cardItemImageLink: hero.thumbnail.path + "." +hero.thumbnail.extension,
+                    cardItemName: hero.name,
+                    cardItemText: hero.description
+                });
+            });
+    }
+
+    render() {
         const
-        {
-            cardItemName,
-            cardItemText
-        }
-        =   this.state;
+            {
+                cardItemImageLink,
+                cardItemName,
+                cardItemText
+            }
+                = this.state;
 
         return (
             <div className="char-list-content container-char-list">
@@ -31,7 +46,8 @@ export default class CharacterList extends Component{
                             <a href="/hero" className="card-item__link">
                                 <div className="card-item__thumb-frame">
                                     <figure className="card-item__img-wrapper">
-                                        <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/3dman442.jpg" alt=""></img>
+                                        <img src={cardItemImageLink}
+                                             alt=""></img>
                                     </figure>
                                 </div>
                                 <div className="card-item-body">
@@ -51,7 +67,8 @@ export default class CharacterList extends Component{
                             <a href="/hero" className="card-item__link">
                                 <div className="card-item__thumb-frame">
                                     <figure className="card-item__img-wrapper">
-                                        <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/3dman442.jpg" alt=""></img>
+                                        <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/3dman442.jpg"
+                                             alt=""></img>
                                     </figure>
                                 </div>
                                 <div className="card-item-body">
@@ -72,7 +89,8 @@ export default class CharacterList extends Component{
                             <a href="/hero" className="card-item__link">
                                 <div className="card-item__thumb-frame">
                                     <figure className="card-item__img-wrapper">
-                                        <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/3dman442.jpg" alt=""></img>
+                                        <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/3dman442.jpg"
+                                             alt=""></img>
                                     </figure>
                                 </div>
                                 <div className="card-item-body">
@@ -93,7 +111,8 @@ export default class CharacterList extends Component{
                             <a href="/hero" className="card-item__link">
                                 <div className="card-item__thumb-frame">
                                     <figure className="card-item__img-wrapper">
-                                        <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/3dman442.jpg" alt=""></img>
+                                        <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/3dman442.jpg"
+                                             alt=""></img>
                                     </figure>
                                 </div>
                                 <div className="card-item-body">
@@ -114,7 +133,8 @@ export default class CharacterList extends Component{
                             <a href="/hero" className="card-item__link">
                                 <div className="card-item__thumb-frame">
                                     <figure className="card-item__img-wrapper">
-                                        <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/3dman442.jpg" alt=""></img>
+                                        <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/3dman442.jpg"
+                                             alt=""></img>
                                     </figure>
                                 </div>
                                 <div className="card-item-body">
@@ -135,7 +155,8 @@ export default class CharacterList extends Component{
                             <a href="/hero" className="card-item__link">
                                 <div className="card-item__thumb-frame">
                                     <figure className="card-item__img-wrapper">
-                                        <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/3dman442.jpg" alt=""></img>
+                                        <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/3dman442.jpg"
+                                             alt=""></img>
                                     </figure>
                                 </div>
                                 <div className="card-item-body">
@@ -156,7 +177,8 @@ export default class CharacterList extends Component{
                             <a href="/hero" className="card-item__link">
                                 <div className="card-item__thumb-frame">
                                     <figure className="card-item__img-wrapper">
-                                        <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/3dman442.jpg" alt=""></img>
+                                        <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/3dman442.jpg"
+                                             alt=""></img>
                                     </figure>
                                 </div>
                                 <div className="card-item-body">
@@ -177,7 +199,8 @@ export default class CharacterList extends Component{
                             <a href="/hero" className="card-item__link">
                                 <div className="card-item__thumb-frame">
                                     <figure className="card-item__img-wrapper">
-                                        <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/3dman442.jpg" alt=""></img>
+                                        <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/3dman442.jpg"
+                                             alt=""></img>
                                     </figure>
                                 </div>
                                 <div className="card-item-body">
@@ -198,7 +221,8 @@ export default class CharacterList extends Component{
                             <a href="/hero" className="card-item__link">
                                 <div className="card-item__thumb-frame">
                                     <figure className="card-item__img-wrapper">
-                                        <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/3dman442.jpg" alt=""></img>
+                                        <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/3dman442.jpg"
+                                             alt=""></img>
                                     </figure>
                                 </div>
                                 <div className="card-item-body">
@@ -219,7 +243,8 @@ export default class CharacterList extends Component{
                             <a href="/hero" className="card-item__link">
                                 <div className="card-item__thumb-frame">
                                     <figure className="card-item__img-wrapper">
-                                        <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/3dman442.jpg" alt=""></img>
+                                        <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/3dman442.jpg"
+                                             alt=""></img>
                                     </figure>
                                 </div>
                                 <div className="card-item-body">
@@ -240,7 +265,8 @@ export default class CharacterList extends Component{
                             <a href="/hero" className="card-item__link">
                                 <div className="card-item__thumb-frame">
                                     <figure className="card-item__img-wrapper">
-                                        <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/3dman442.jpg" alt=""></img>
+                                        <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/3dman442.jpg"
+                                             alt=""></img>
                                     </figure>
                                 </div>
                                 <div className="card-item-body">
@@ -261,7 +287,8 @@ export default class CharacterList extends Component{
                             <a href="/hero" className="card-item__link">
                                 <div className="card-item__thumb-frame">
                                     <figure className="card-item__img-wrapper">
-                                        <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/3dman442.jpg" alt=""></img>
+                                        <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/3dman442.jpg"
+                                             alt=""></img>
                                     </figure>
                                 </div>
                                 <div className="card-item-body">
