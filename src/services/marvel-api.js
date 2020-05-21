@@ -1,5 +1,3 @@
-import React from 'react';
-
 export default class MarvelApi {
 
     _url_heroes = 'https://gateway.marvel.com/v1/public/characters';
@@ -11,7 +9,7 @@ export default class MarvelApi {
         const response = await fetch(url);
 
         if(!response.ok){
-            throw new Error(`Could not fetch ${url}` + `, received ${response.status}`);
+            throw new Error(`Could not fetch ${url}, received ${response.status}`);
         }
 
         return await response.json();
@@ -77,5 +75,5 @@ marvel.getAllHeroes().then((heroes) => {
 });
 
 marvel.getHeroesById(1011334).then((hero) => {
-    console.log(hero);
+    // console.log(hero);
 });

@@ -28,10 +28,10 @@ export default class CharacterList extends Component{
                 <div className="row">
                     <div className="col-2 pr-0">
                         <div className="char-list__card-item card-item">
-                            <a href="#hero" className="card-item__link">
+                            <a href="/hero" className="card-item__link">
                                 <div className="card-item__thumb-frame">
                                     <figure className="card-item__img-wrapper">
-                                        <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/3dman442.jpg"></img>
+                                        <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/3dman442.jpg" alt=""></img>
                                     </figure>
                                 </div>
                                 <div className="card-item-body">
@@ -48,10 +48,10 @@ export default class CharacterList extends Component{
                     </div>
                     <div className="col-2 pr-0">
                         <div className="char-list__card-item card-item">
-                            <a href="#hero" className="card-item__link">
+                            <a href="/hero" className="card-item__link">
                                 <div className="card-item__thumb-frame">
                                     <figure className="card-item__img-wrapper">
-                                        <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/3dman442.jpg"></img>
+                                        <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/3dman442.jpg" alt=""></img>
                                     </figure>
                                 </div>
                                 <div className="card-item-body">
@@ -69,10 +69,10 @@ export default class CharacterList extends Component{
                     </div>
                     <div className="col-2 pr-0">
                         <div className="char-list__card-item card-item">
-                            <a href="#hero" className="card-item__link">
+                            <a href="/hero" className="card-item__link">
                                 <div className="card-item__thumb-frame">
                                     <figure className="card-item__img-wrapper">
-                                        <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/3dman442.jpg"></img>
+                                        <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/3dman442.jpg" alt=""></img>
                                     </figure>
                                 </div>
                                 <div className="card-item-body">
@@ -90,10 +90,10 @@ export default class CharacterList extends Component{
                     </div>
                     <div className="col-2 pr-0">
                         <div className="char-list__card-item card-item">
-                            <a href="#hero" className="card-item__link">
+                            <a href="/hero" className="card-item__link">
                                 <div className="card-item__thumb-frame">
                                     <figure className="card-item__img-wrapper">
-                                        <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/3dman442.jpg"></img>
+                                        <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/3dman442.jpg" alt=""></img>
                                     </figure>
                                 </div>
                                 <div className="card-item-body">
@@ -111,10 +111,10 @@ export default class CharacterList extends Component{
                     </div>
                     <div className="col-2 pr-0">
                         <div className="char-list__card-item card-item">
-                            <a href="#hero" className="card-item__link">
+                            <a href="/hero" className="card-item__link">
                                 <div className="card-item__thumb-frame">
                                     <figure className="card-item__img-wrapper">
-                                        <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/3dman442.jpg"></img>
+                                        <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/3dman442.jpg" alt=""></img>
                                     </figure>
                                 </div>
                                 <div className="card-item-body">
@@ -132,10 +132,10 @@ export default class CharacterList extends Component{
                     </div>
                     <div className="col-2 pr-0">
                         <div className="char-list__card-item card-item">
-                            <a href="#hero" className="card-item__link">
+                            <a href="/hero" className="card-item__link">
                                 <div className="card-item__thumb-frame">
                                     <figure className="card-item__img-wrapper">
-                                        <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/3dman442.jpg"></img>
+                                        <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/3dman442.jpg" alt=""></img>
                                     </figure>
                                 </div>
                                 <div className="card-item-body">
@@ -153,10 +153,10 @@ export default class CharacterList extends Component{
                     </div>
                     <div className="col-2 pr-0">
                         <div className="char-list__card-item card-item">
-                            <a href="#hero" className="card-item__link">
+                            <a href="/hero" className="card-item__link">
                                 <div className="card-item__thumb-frame">
                                     <figure className="card-item__img-wrapper">
-                                        <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/3dman442.jpg"></img>
+                                        <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/3dman442.jpg" alt=""></img>
                                     </figure>
                                 </div>
                                 <div className="card-item-body">
@@ -174,10 +174,10 @@ export default class CharacterList extends Component{
                     </div>
                     <div className="col-2 pr-0">
                         <div className="char-list__card-item card-item">
-                            <a href="#hero" className="card-item__link">
+                            <a href="/hero" className="card-item__link">
                                 <div className="card-item__thumb-frame">
                                     <figure className="card-item__img-wrapper">
-                                        <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/3dman442.jpg"></img>
+                                        <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/3dman442.jpg" alt=""></img>
                                     </figure>
                                 </div>
                                 <div className="card-item-body">
@@ -195,10 +195,10 @@ export default class CharacterList extends Component{
                     </div>
                     <div className="col-2 pr-0">
                         <div className="char-list__card-item card-item">
-                            <a href="#hero" className="card-item__link">
+                            <a href="/hero" className="card-item__link">
                                 <div className="card-item__thumb-frame">
                                     <figure className="card-item__img-wrapper">
-                                        <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/3dman442.jpg"></img>
+                                        <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/3dman442.jpg" alt=""></img>
                                     </figure>
                                 </div>
                                 <div className="card-item-body">
@@ -216,10 +216,10 @@ export default class CharacterList extends Component{
                     </div>
                     <div className="col-2 pr-0">
                         <div className="char-list__card-item card-item">
-                            <a href="#hero" className="card-item__link">
+                            <a href="/hero" className="card-item__link">
                                 <div className="card-item__thumb-frame">
                                     <figure className="card-item__img-wrapper">
-                                        <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/3dman442.jpg"></img>
+                                        <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/3dman442.jpg" alt=""></img>
                                     </figure>
                                 </div>
                                 <div className="card-item-body">
@@ -237,10 +237,10 @@ export default class CharacterList extends Component{
                     </div>
                     <div className="col-2 pr-0">
                         <div className="char-list__card-item card-item">
-                            <a href="#hero" className="card-item__link">
+                            <a href="/hero" className="card-item__link">
                                 <div className="card-item__thumb-frame">
                                     <figure className="card-item__img-wrapper">
-                                        <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/3dman442.jpg"></img>
+                                        <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/3dman442.jpg" alt=""></img>
                                     </figure>
                                 </div>
                                 <div className="card-item-body">
@@ -258,10 +258,10 @@ export default class CharacterList extends Component{
                     </div>
                     <div className="col-2 pr-0">
                         <div className="char-list__card-item card-item">
-                            <a href="#hero" className="card-item__link">
+                            <a href="/hero" className="card-item__link">
                                 <div className="card-item__thumb-frame">
                                     <figure className="card-item__img-wrapper">
-                                        <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/3dman442.jpg"></img>
+                                        <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/3dman442.jpg" alt=""></img>
                                     </figure>
                                 </div>
                                 <div className="card-item-body">
@@ -281,25 +281,25 @@ export default class CharacterList extends Component{
                 <div className="pagination__wrapper">
                     <ul className="pagination">
                         <li className="page-item disabled">
-                            <a className="page-link" href="#">&laquo; PREV </a>
+                            <a className="page-link" href="/">&laquo; PREV </a>
                         </li>
                         <li className="page-item active">
-                            <a className="page-link" href="#">1</a>
+                            <a className="page-link" href="/">1</a>
                         </li>
                         <li className="page-item">
-                            <a className="page-link" href="#">2</a>
+                            <a className="page-link" href="/">2</a>
                         </li>
                         <li className="page-item">
-                            <a className="page-link" href="#">3</a>
+                            <a className="page-link" href="/">3</a>
                         </li>
                         <li className="page-item">
-                            <a className="page-link" href="#">4</a>
+                            <a className="page-link" href="/">4</a>
                         </li>
                         <li className="page-item">
-                            <a className="page-link" href="#">5</a>
+                            <a className="page-link" href="/">5</a>
                         </li>
                         <li className="page-item">
-                            <a className="page-link" href="#">NEXT &raquo;</a>
+                            <a className="page-link" href="/">NEXT &raquo;</a>
                         </li>
                     </ul>
                 </div>
